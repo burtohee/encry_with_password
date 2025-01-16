@@ -14,12 +14,12 @@ password = pass_from_user.encode()
 with open("salt.txt", "rb") as file:
     read_salt = file.read()
 
-# Read the Base64 string from the file
-with open("salt_base64.txt", "r") as file:
-    base64_salt = file.read()
+# # Read the Base64 string from the file
+# with open("salt_base64.txt", "r") as file:
+#     base64_salt = file.read()
 
-# Decode the Base64 string back to the original byte string
-decoded_salt = base64.b64decode(base64_salt)
+# # Decode the Base64 string back to the original byte string
+# decoded_salt = base64.b64decode(base64_salt)
 
 # print(f"Decoded salt: {decoded_salt}")
 
